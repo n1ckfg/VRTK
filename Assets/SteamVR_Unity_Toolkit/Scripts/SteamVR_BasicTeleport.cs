@@ -77,6 +77,7 @@ public class SteamVR_BasicTeleport : MonoBehaviour {
         {
             if (listenerInitTries > 0)
             {
+                listenerInitTries--;
                 Invoke("InitPointerListeners", 0.25f);
             }
             else
